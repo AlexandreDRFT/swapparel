@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="fr.swapparel">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ui.CitiesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.WelcomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.DressingListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SingleApparelActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ui.InfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AproposActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.GuideListActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="net.hockeyapp.android.appIdentifier"
+            android:value="${HOCKEYAPP_APP_ID}" />
+
+        <activity
+            android:name=".ui.AddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.IntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PolicyActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6874203165727037~3943313046" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC7qkOAXc9-YpATjTkVbx7J00RkM9-HBx8" />
+
+        <activity
+            android:name=".ui.AddShoesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.EditActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
